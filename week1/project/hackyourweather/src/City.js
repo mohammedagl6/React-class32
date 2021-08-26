@@ -10,14 +10,14 @@ const City = ({ city }) => {
       } = city;
     return(
        <article className="city">
-           <h2>{`${name}, ${country}`}</h2>
+           <h2>{name}, {country}</h2>
            <p>
                 <strong>{weatherMain}</strong><br />
                 {weatherDescription}
            </p>
            <p>min temp: {(temp_min - 273.15).toFixed(1)}</p>
            <p>max temp: {(temp_max - 273.15).toFixed(1)}</p>
-           <p>location: {`${coord.lon}, ${coord.lat}`}</p>
+           <p>location: {coord.lon}, {coord.lat}</p>
        </article>
     )
 }
