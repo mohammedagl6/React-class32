@@ -7,7 +7,7 @@ const App = () => {
     <div className="container">
       <header className="title"><h1>Weather</h1></header>
       <main className="content">
-        { data.map( (city, index) => <City city={ city } key={ index }/> ) }
+        { data.map( (city) => <City city={ city } key={ city.id }/> ) }
       </main>
     </div>
   );
