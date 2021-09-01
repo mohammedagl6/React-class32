@@ -1,0 +1,50 @@
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.title{
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.city{
+    display: inline-block;
+    width: 400px;
+    border: 1px solid #000;
+    margin: 60px 0 0;
+    text-align: left;
+    padding: 5px 30px;
+}
+.searchInput{
+    width: 320px;
+    height: 27px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #e6e6e6;
+    padding: 5px 25px;
+    font-size: 1rem;
+}
+
+.searchButton{
+    font-size: 1.3rem;
+    background-color: #e6e6e6;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.searchIcon{
+    background-size: cover;
+    background-image: url('./assets/images/search.png');
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 6px;
+    top: 11px;
+}
+.searchForm{
+    position: relative;
+}
