@@ -15,8 +15,8 @@ const City = ({ city }) => {
                 <strong>{weatherMain}</strong><br />
                 {weatherDescription}
            </p>
-           <p>min temp: {(temp_min - 273.15).toFixed(1)}</p>
-           <p>max temp: {(temp_max - 273.15).toFixed(1)}</p>
+           <p>min temp: {temp_min}</p>
+           <p>max temp: {temp_max}</p>
            <p>location: {`${coord.lon}, ${coord.lat}`}</p>
        </article>
     )
