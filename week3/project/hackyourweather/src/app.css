@@ -21,11 +21,11 @@
 }
 .searchInput{
     width: 320px;
-    height: 27px;
+    height: 35px;
     margin-right: 20px;
     border-radius: 10px;
     border: 2px solid #e6e6e6;
-    padding: 5px 25px;
+    padding: 5px 5px 5px 25px;
     font-size: 1rem;
 }
 
@@ -35,16 +35,22 @@
     padding: 5px 20px;
     border-radius: 5px;
 }
+.searchButton:hover {
+    background-color: rgba(230, 230, 230, 0.5);
+    cursor: pointer;
+}
 .searchIcon{
-    background-size: cover;
-    background-image: url('./assets/images/search.png');
-    width: 20px;
-    height: 20px;
-    display: block;
     position: absolute;
     left: 6px;
     top: 11px;
 }
 .searchForm{
     position: relative;
+}
+
+.close{
+    margin-top: 10px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
 }

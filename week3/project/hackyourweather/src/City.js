@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
 
 
-const City = ({ city }) => {
-    const {name,
+const City = ({ city, setCityList }) => {
+    const {
+        id,
+        name,
         sys: {country},
         weather: [{main: weatherMain,
         description: weatherDescription}],
@@ -10,7 +13,17 @@ const City = ({ city }) => {
       } = city;
     return(
        <article className="city">
+           <span
+                className="close"
+                onClick={() => {
+                    setCityList(cityList => cityList.filter(city => city.id !==id))
+                }}
+           >
+                <i className="far fa-times-circle fa-2x"></i>
+           </span>
+           <Link to={`/${id}`}>
            <h2>{`${name}, ${country}`}</h2>
+           </Link>
            <p>
                 <strong>{weatherMain}</strong><br />
                 {weatherDescription}
