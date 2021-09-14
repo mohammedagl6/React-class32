@@ -11,9 +11,9 @@ const DogGallery = () => {
 
     const getDogPhotos = async() => {
         try {
-            const response = await fetch('https://dog.ceo/api/breeds/image/random/3');
+            const response = await fetch('https://dog.ceo/api/breeds/image/random');
             const {message} = await response.json();
-            setDogPhotos(message);
+            setDogPhotos([...dogPhotos, message]);
         } catch (error) {
             console.log(error)
         }
